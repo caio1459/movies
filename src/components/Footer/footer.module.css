@@ -1,0 +1,50 @@
+.footer {
+    background-color: black;
+    padding: 10px;
+    border-top: 1px solid #f44336;
+    position: relative;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.footer p span {
+    color: #f44336;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+
+.footer ul li {
+    background-color: #212020;
+    border-radius: 50%;
+    border: 1px solid #333;
+    list-style: none;
+}
+
+.footer ul li a {
+    color: white;
+    list-style: none;
+}
+
+.icon {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.icon:hover {
+    transition: 0.3s ease-in-out;
+    color: rgb(255, 52, 52);
+}

@@ -1,0 +1,17 @@
+.category {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+
+.category h1{
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+}
+
+.category div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
