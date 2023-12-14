@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 20px;
+    font-family: sans-serif;
+    border: 1px solid #f44336;
+    margin-block: 110px;
+    height: 40vh;
+}
+
+.container img {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.container h1{
+    font-size: 1.5rem;
+
+}
+
+.container span {
+    font-weight: bold;
+    color: #f44336;
+}
