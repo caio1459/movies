@@ -3,6 +3,7 @@ import App from "../App";
 import { Home } from "../pages/Home";
 import { Watch } from "../pages/Watch";
 import { Error } from "../pages/Error/Error";
+import { Search } from "../pages/Search";
 
 export const AppRoutes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export const AppRoutes = createBrowserRouter([
             {
                 path: '*', //Indica uma pagina para ir se nada for encontrado
                 element: <Error />
+            },
+            {
+                path: 'search',
+                element: <Search />
             }
         ]
     }

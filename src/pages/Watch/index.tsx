@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { Container } from "../../components/Container"
 import style from './watch.module.css'
-import videos from '../../db/db.json'
+import videos from '../../../db/db.json'
 import { Error } from "../Error/Error"
 
 
