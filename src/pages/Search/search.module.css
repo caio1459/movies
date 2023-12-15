@@ -2,4 +2,5 @@
     display: flex;
     padding-top: 68px;
     flex-direction: column;
+    min-height: 60vh;
 }

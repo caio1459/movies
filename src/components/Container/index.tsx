@@ -1,5 +1,4 @@
 import style from './container.module.css';
-// Importa o módulo React e a tipagem ReactNode.
 import React, { ReactNode } from 'react';
 
 // Define a interface `ContainerProps` para tipar as propriedades do componente `Container`.

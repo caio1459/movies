@@ -22,7 +22,6 @@ interface ICategoryProps {
 }
 
 // Define o componente funcional Category, que aceita as props conforme a interface ICategoryProps.
-
 export const Category: React.FC<ICategoryProps> = ({ children, title }) => {
   return (
     <section className={style.category}>

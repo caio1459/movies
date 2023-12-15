@@ -8,10 +8,10 @@ interface ICardProps {
 
 export const Card = ({ id, imgUlr }: ICardProps) => {
   return (
-    <section className={style.card}>
+    <div className={style.card}>
       <Link to={`/watch/${id}`}>
         <img src={imgUlr} alt="Capa" />
       </Link>
-    </section>
+    </div>
   );
 };

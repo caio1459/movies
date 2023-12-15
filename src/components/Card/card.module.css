@@ -4,5 +4,12 @@
 
 .card img {
     border-radius: 8px;
-    width: 350px;
+    width: 300px;
+}
+
+.card img:hover{
+    transform: scale(1.15);
+    transition: 0.8s;
+    box-shadow: 0 0 10px #222;
+    margin: 1.4rem;
 }
