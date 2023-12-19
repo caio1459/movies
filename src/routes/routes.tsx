@@ -4,6 +4,7 @@ import { Home } from "../pages/Home";
 import { Watch } from "../pages/Watch";
 import { Error } from "../pages/Error/Error";
 import { Search } from "../pages/Search";
+import { Favorites } from "../pages/Favorites";
 
 export const AppRoutes = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ export const AppRoutes = createBrowserRouter([
             {
                 path: 'search',
                 element: <Search />
+            },
+            {
+                path: 'favorites',
+                element: <Favorites />
             }
         ]
     }

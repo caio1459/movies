@@ -24,6 +24,11 @@ export const Header = () => {
                             Pesquisar
                         </Link>
                     </li>
+                    <li>
+                        <Link to='favorites'>
+                            Favoritos
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

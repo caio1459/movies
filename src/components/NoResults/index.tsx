@@ -1,5 +1,5 @@
 import style from "./noResults.module.css";
-import image from "/public/images/erro404.png";
+import image from "/images/erro404.png";
 
 interface INoResultsProps {
   text: string;
