@@ -1,7 +1,7 @@
 export interface IVideos {
-    id: string
+    id?: string
     title: string
     url: string
-    cover: string
+    cover?: string
     category: string
 }

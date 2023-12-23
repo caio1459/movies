@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IVideos } from "../../interfaces/IVideos";
 import { VideoList } from "../VideoList";
 import style from "./searchInput.module.css";
 import { NoResults } from "../NoResults";
+import { Loader } from "../Loader";
 
 interface ISearchInputProps {
     videos: IVideos[];
@@ -23,6 +24,13 @@ export const SearchInput = ({ videos }: ISearchInputProps) => {
     // Filtra os vídeos com base no texto de pesquisa.
     const searchResultVideos: IVideos[] = filterVideos(videos, searchText);
 
+    //Começa carregando
+    const [loading, setLoading] = useState(true)
+    useEffect(() => {
+        //após 0.5s o loading é carregado
+        setTimeout(() => setLoading(false), 300)
+    }, [])
+
     return (
         <section className={style.container}>
             {/* Input de pesquisa controlado pelo estado 'searchText'. */}
@@ -35,11 +43,13 @@ export const SearchInput = ({ videos }: ISearchInputProps) => {
             />
 
             {/* Verifica se há resultados antes de exibir a lista de vídeos ou a div de nenhum resultado. */}
-            {searchResultVideos.length > 0 ? (
-                <VideoList videos={searchResultVideos} />
-            ) : (
-                <NoResults text={searchText} />
-            )}
+            {
+                loading ? <Loader /> : searchResultVideos.length > 0 ? (
+                    <VideoList videos={searchResultVideos} />
+                ) : (
+                    <NoResults text={searchText} />
+                )
+            }
         </section>
     );
 };

@@ -5,6 +5,7 @@ import { Watch } from "../pages/Watch";
 import { Error } from "../pages/Error/Error";
 import { Search } from "../pages/Search";
 import { Favorites } from "../pages/Favorites";
+import { Register } from "../pages/Register";
 
 export const AppRoutes = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const AppRoutes = createBrowserRouter([
             {
                 path: 'favorites',
                 element: <Favorites />
+            },
+            {
+                path: 'register',
+                element: <Register />
             }
         ]
     }

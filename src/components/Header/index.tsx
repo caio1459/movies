@@ -15,8 +15,8 @@ export const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to='watch'>
-                            Assitir
+                        <Link to='register'>
+                            Cadastrar
                         </Link>
                     </li>
                     <li>
